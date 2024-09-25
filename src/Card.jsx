@@ -59,7 +59,12 @@ function Card() {
                             </li>
                         </div>
                     </ul>
-                    <button id='quote'>Get Quote</button>
+                    <div className="container mt-5">
+                    <button className="btn btn-primary" onClick={toggleModal}>
+                        Get Quote
+                    </button>
+                    <ModalS isOpen={isModalOpen} onClose={toggleModal} />
+                </div>
                 </div>
         </div>
             </>
