@@ -1,5 +1,8 @@
 import './App.css'
 import { Logoscene } from './Logoscene';
+import logo1 from "./images/facebookLogo.jpeg"
+import logo2 from "./images/tiktok-icon2.jpg"
+import logo3 from "./images/Instagram_logo_2016.jpeg"
 
 function NavigationBar() {
 
@@ -31,9 +34,9 @@ function NavigationBar() {
             </ul>
         </nav>
         <div className="socials">
-          <a href="https://www.facebook.com/monarcaoutdoor" target="_blank" rel="noopener noreferrer"><img src="facebookLogo.jpeg" id="fbLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
-          <a href="https://www.tiktok.com/@monarca.outdoor" target="_blank" rel="noopener noreferrer"><img src="tiktok-icon2.jpg" id="tikTok"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
-          <a href="https://www.instagram.com/monarca.outdoor/" target="_blank" rel="noopener noreferrer"><img src="Instagram_logo_2016.jpeg" id="igLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.facebook.com/monarcaoutdoor" target="_blank" rel="noopener noreferrer"><img src={logo1} id="fbLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.tiktok.com/@monarca.outdoor" target="_blank" rel="noopener noreferrer"><img src={logo2} id="tikTok"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
+          <a href="https://www.instagram.com/monarca.outdoor/" target="_blank" rel="noopener noreferrer"><img src={logo3} id="igLogo"  style={{ width: '2rem', height: '2rem', cursor: 'pointer' }}/></a>
         </div>
     </>
     )

@@ -1,5 +1,5 @@
-import myImage from './LandScape.jpg'
-import myImage2 from './LawnM.jpg'
+import myImage from './images/LandScape.jpg'
+import myImage2 from './images/LawnM.jpg'
 import ModalS from './modal.jsx'
 import React, { useState } from 'react';
 
