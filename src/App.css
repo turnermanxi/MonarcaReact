@@ -1,7 +1,66 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.socials {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  left: 0;
+  width: 1vw;
+  height: 1vh;
+  gap: 25px;
+  overflow: visible;
+  z-index: +1;
+  
+}
+
+
+#video {
+  position: absolute; /* Positioned relative to the viewport */
+  top: 9rem; /* Anchors the video to the top of the screen */
+  left: 0;
+  width: 100vw !important; /* Stretches the video to the full width of the screen */
+  height: 30vh; /* Sets the height to 30% of the viewport */
+   /* Prevents the video from overflowing its bounds */
+  z-index: -1; /* Ensures the video remains in the background */
+}
+
+#video > div {
+  object-fit: cover !important; 
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important; /* Stretches the video to fit the container width */
+  height: 100%; /* Stretches the video to fit the container height */
+  margin: 0 !important; /* Remove any unwanted margins */
+  padding: 0 !important; /* Remove any padding that could be affecting layout */
+}
+
+.banner-video {
+  width: 100% !important; 
+  height: 100% !important; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.react-player {
+  width: 100vw !important;
+  object-fit: cover;
 }
 
 #nav {
@@ -19,6 +78,7 @@
   box-shadow: 0px 5px 2px rgb(41, 40, 40);
   text-decoration: none;
   text-wrap: nowrap;
+  padding: 1rem;
 }
 
 #nav nav {
@@ -30,7 +90,7 @@
   height: 12vh;
   z-index: +12;
   position: relative;
-  top: 0;
+  top: -1rem;
   left: -5rem;
   
 }
@@ -41,25 +101,86 @@
   display: flex;
   position: relative;
   bottom: -1.5rem;
-  gap: 100px;
-  font-size: 2rem;
+  gap: 5rem;
+  font-size: 30px;
   color: rgb(167, 75, 1);
   font-weight: 700;
   left: -4rem
 }
 
+li {
+  text-decoration: none;
+}
+
+ul {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+#cardList {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(51, 47, 47);
+}
+
 #card1 {
-  padding: 2em;
+  padding: 1em;
   border: 3px solid orange;
-  text-align: center;
+  text-align: left;
+  position: relative;
+  top: 20rem;
+  left: -30rem;
+  background-color: orange;
+  color: black;
 }
 
 #card2 {
-  padding: 2em;
+  padding: 1em;
   border: 3px solid orange;
-  text-align: center;
+  text-align: left;
+  background-color: orange;
+  color: black;
+  position: relative;
+  top: 20rem;
+  left: -10rem;
+  width: 40vw;
 }
 
-.read-the-docs {
-  color: #888;
+img {
+  opacity: 90%;
+  max-height: 50vh;
+}
+
+#image1 {
+  width: 37vw;
+}
+
+
+
+#copyright {
+  width: 100%;
+  background-color: grey;
+  color: orange;
+  padding: 35px;
+  text-align: center;
+  font-weight: 300;
+  opacity: 65%;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+}
+
+.cards {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  left: 30rem;
+  
 }
