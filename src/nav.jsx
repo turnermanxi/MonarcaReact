@@ -3,6 +3,7 @@ import { Logoscene } from './Logoscene';
 import logo1 from "./images/facebookLogo.jpeg"
 import logo2 from "./images/tiktok-icon2.jpg"
 import logo3 from "./images/Instagram_logo_2016.jpeg"
+import { Link } from "react-router-dom";
 
 function NavigationBar() {
 
@@ -26,7 +27,7 @@ function NavigationBar() {
                     Landscaping
                 </li>
                 <li>
-                    Gallery
+                    <Link to='gallery'>Gallery</Link>
                 </li>
                 <li>
                     555-555-5555
