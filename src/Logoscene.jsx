@@ -42,7 +42,7 @@ const ObjModel = ({url, color}) => {
           //ref.current.rotation.y = Math.PI / 2; // 90 degrees in radians
           //ref.current.rotation.x = Math.PI / -2;
 
-          const scaleFactor = 12 / size.length();
+          const scaleFactor = 10 / size.length();
           ref.current.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
           //window.addEventListener('mousemove', handleMouseMove);
@@ -50,7 +50,7 @@ const ObjModel = ({url, color}) => {
 
           
 
-          obj.position.y += -.5;
+          obj.position.y += 1;
           //obj.position.z += 1;
           obj.position.x += 8;
         }
@@ -59,7 +59,7 @@ const ObjModel = ({url, color}) => {
       useFrame(() => {
         if (ref.current) {
           // Rotate the object around the Y-axis
-          ref.current.rotation.x += 0.02; // Adjust the rotation speed as needed
+          ref.current.rotation.x += 0.01; // Adjust the rotation speed as needed
         }
       });
 
