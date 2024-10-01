@@ -88,7 +88,7 @@ h2 {
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 14rem; /* Adds space between video and cards */
+  margin-top: 25rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding-top: 10rem; /* Extra padding to ensure it's clear of the video */
 }
