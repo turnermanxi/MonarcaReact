@@ -17,6 +17,20 @@ function Card() {
 
     return (
         <>
+        <div className='topCard'>
+            <h2 style={{ textAlign: 'center' }}>What we do:</h2>
+            <p>Lorem lorem lorem lorem stuff more lorem
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+            Lorem lorem lorem lorem stuff more lorem 
+             </p>
+        </div>
             <div className="cards">
                 <div id='card1'>
                     <img src={myImage2} alt="Lawn Maintenance" id="image2"/>

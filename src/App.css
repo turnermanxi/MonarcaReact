@@ -84,6 +84,8 @@ li, ul {
 
 h2 {
   font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 /* Card styles */
@@ -93,13 +95,42 @@ h2 {
   color: rgb(51, 47, 47);
 }
 
+.topCard {
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap if needed */
+  justify-content: space-between; /* Spread the cards */
+  margin-top: 35rem; /* Adds space between video and cards */
+  z-index: -1; /* Ensure cards are above the video */
+  padding: 2rem; /* Extra padding to ensure it's clear of the video */
+  border: 3px solid orange;
+  background-color: orange;
+  color: black;
+  object-fit: cover;
+  position: absolute;
+  left: 2rem;
+  width: calc(95vw - 1rem); /* Makes the cards 50% of the available width */
+
+
+}
+
+.topCard h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.topCard p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 .cards {
   gap: 20px;
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 25rem; /* Adds space between video and cards */
+  margin-top: 51rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding-top: 10rem; /* Extra padding to ensure it's clear of the video */
 }
