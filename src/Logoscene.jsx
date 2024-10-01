@@ -52,7 +52,7 @@ const ObjModel = ({url, color}) => {
 
           obj.position.y += 1;
           //obj.position.z += 1;
-          obj.position.x += 8;
+          obj.position.x += 11;
         }
       }, [obj, color]);
 
