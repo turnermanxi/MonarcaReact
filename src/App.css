@@ -159,14 +159,14 @@ Link{
 /* Responsive font adjustments using media queries */
 @media (max-width: 768px) {
   #nav ul {
-    font-size: .7rem; /* Smaller font size for mobile */
+    font-size: .5rem; /* Smaller font size for mobile */
     flex-direction: row; /* Stack nav items vertically */
     gap: 1rem; /* More space between items */
     padding: 0.5rem; /* Adjust padding */
   }
 
   #nav ul li a {
-    font-size: .7rem; /* Scale nav links down */
+    font-size: .5rem; /* Scale nav links down */
   }
 
   h2 {
@@ -176,12 +176,12 @@ Link{
 
 @media (max-width: 480px) {
   #nav ul {
-    font-size: .7rem; /* Further reduce font size for very small screens */
+    font-size: .5rem; /* Further reduce font size for very small screens */
     padding: 0.3rem;
   }
 
   #nav ul li a {
-    font-size: .7rem; /* Even smaller for very narrow screens */
+    font-size: .5rem; /* Even smaller for very narrow screens */
   }
 
   h2 {
