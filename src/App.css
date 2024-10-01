@@ -135,7 +135,11 @@ img {
 
 #image1 {
   width: 100%; /* Adjust width to be fully responsive */
-  height: auto;
+  height: 50vh;
+}
+
+#image2 {
+  height: 100vh;
 }
 
 

@@ -19,7 +19,7 @@ function Card() {
         <>
             <div className="cards">
                 <div id='card1'>
-                    <img src={myImage2} alt="Lawn Maintenance" />
+                    <img src={myImage2} alt="Lawn Maintenance" id="image2"/>
                     <h2>Lawn Maintenance</h2>
                     <ul style={{ listStyleType: 'none' }}>
                         <div id="cardList">
