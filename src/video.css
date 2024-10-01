@@ -1,0 +1,39 @@
+#video {
+    position: absolute;
+    top: 4.5rem; /* Anchors the video to the top */
+    left: 0;
+    width: 100vw; 
+    height: 100vh; /* Full height to cover the entire viewport */
+    z-index: -1; /* Puts video behind everything */
+  }
+  
+  #video > div {
+    object-fit: cover !important;
+    width: 100vw;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  #video > .banner-video, 
+  .react-player {
+    width: 100vw !important;
+    height: 50% !important;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .react-player__preview, 
+  .react-player__wrapper {
+    width: 100vw !important;
+    height: 50vh !important;
+  }
+  
+  .react-player video {
+    object-fit: cover !important;
+    width: 100vw;
+    height: 50vh; /* Ensure video covers full viewport */
+  }
+  

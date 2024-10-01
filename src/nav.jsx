@@ -18,19 +18,16 @@ function NavigationBar() {
         </div>
             <ul style={{ listStyleType: 'none' }}>
                 <li>
-                    About
+                    Home
                 </li>
                 <li>
-                    Lawn Maintenance
-                </li>
-                <li>
-                    Landscaping
+                    Services
                 </li>
                 <li>
                     <Link to='gallery'>Gallery</Link>
                 </li>
                 <li>
-                    555-555-5555
+                📱 555-555-5555
                 </li>
             </ul>
         </nav>

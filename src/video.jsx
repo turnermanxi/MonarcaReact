@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player';
+import "./video.css"
 
 function VideoPlayer() {
 
@@ -7,10 +8,12 @@ function VideoPlayer() {
               <ReactPlayer
               url="/background.mov"
               volume= {0}
-              className='banner-video'
+              width="100%"
+              height="100%"
               style={{ width: '100vw' }}
               playing={true}
               loop={true}
+              className="react-player" 
               />
         </div>
     )

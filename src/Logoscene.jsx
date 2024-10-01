@@ -42,7 +42,7 @@ const ObjModel = ({url, color}) => {
           //ref.current.rotation.y = Math.PI / 2; // 90 degrees in radians
           //ref.current.rotation.x = Math.PI / -2;
 
-          const scaleFactor = 9.1 / size.length();
+          const scaleFactor = 12 / size.length();
           ref.current.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
           //window.addEventListener('mousemove', handleMouseMove);
@@ -50,18 +50,18 @@ const ObjModel = ({url, color}) => {
 
           
 
-          //obj.position.y += 2;
+          obj.position.y += -.5;
           //obj.position.z += 1;
-          //obj.position.x += 1;
+          obj.position.x += 8;
         }
       }, [obj, color]);
 
-      //useFrame(() => {
-        //if (ref.current) {
+      useFrame(() => {
+        if (ref.current) {
           // Rotate the object around the Y-axis
-          //ref.current.rotation.y += 0.08; // Adjust the rotation speed as needed
-        //}
-      //});
+          ref.current.rotation.x += 0.02; // Adjust the rotation speed as needed
+        }
+      });
 
       //useFrame(() => {
         //if (ref.current) {
@@ -99,7 +99,7 @@ export function Logoscene() {
             />
 
             <pointLight position={[10, 10, 10]} intensity={1} />
-            <ObjModel url="/MonarcaL.obj" color='orange'/>
+            <ObjModel url="/MonarcaObjW.obj" color='orange'/>
             
             
         </Canvas>

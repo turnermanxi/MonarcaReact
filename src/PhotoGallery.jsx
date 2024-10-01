@@ -3,7 +3,7 @@ import FullScreenViewer from './FullScreenViewer';
 import './Photogallery.css';
 import NavigationBar from './nav';
 
-const ACCESS_TOKEN = 'sl.B9wOMPogBJM8fUdCoG6amf20UbknJCZxgEhbyaN0dPrccZdod_ekvYLb6-UrJkuzM5Vnt87xN7YrP4LOo5D47HaK3y44Cqc8GCWMGEfTxCgP5424acrBRyIb5VnkMu_drI8sXx2gLOhh';
+const ACCESS_TOKEN = 'sl.B9yzEZhyB7PFxwaVAlHrZmS0JwkDd3wXvQ2BSgVrSTVRoozbbC4JKrNQ1WYXV-AyVlK2cuL430Q7c8MK8iY1-u-6U6gNhKHA5PctMOXyxzzuO2LZ1Rl_PFoyrptkfARaKpguI7UxVR8N';
 const FOLDER_PATH = '/monarcaoutdoor-dropbox/monarca_images'; // Dropbox folder path
 
 const DropboxFileFetcher = ({ setImages, setError }) => {
