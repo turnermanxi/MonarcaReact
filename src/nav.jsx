@@ -16,7 +16,7 @@ function NavigationBar() {
         <div id="canvas2">
             <Logoscene />
         </div>
-            <ul style={{ listStyleType: 'none', textdecoration: 'none' }}>
+            <ul style={{ listStyleType: 'none'}}>
                 <li>
                     Home
                 </li>

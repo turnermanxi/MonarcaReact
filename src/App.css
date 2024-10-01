@@ -54,7 +54,7 @@
   height: 15vh;
   position: relative;
   top: -1rem;
-  left: -8rem;
+  left: -10rem;
   z-index: 12;
 }
 
@@ -73,7 +73,7 @@
 }
 
 #nav ul li a {
-  font-size: 2vw; /* 2% of the viewport width */
+  font-size: 1.3rem; /* 2% of the viewport width */
 }
 
 li, ul {
@@ -148,6 +148,10 @@ img {
   background-color: orange;
 }
 
+Link{
+  text-decoration: none;
+}
+
 /* Responsive font adjustments using media queries */
 @media (max-width: 768px) {
   #nav ul {
@@ -158,7 +162,7 @@ img {
   }
 
   #nav ul li a {
-    font-size: 3vw; /* Scale nav links down */
+    font-size: .6rem; /* Scale nav links down */
   }
 
   h2 {
@@ -173,7 +177,7 @@ img {
   }
 
   #nav ul li a {
-    font-size: 3.5vw; /* Even smaller for very narrow screens */
+    font-size: .5rem; /* Even smaller for very narrow screens */
   }
 
   h2 {
