@@ -18,7 +18,7 @@
   grid-gap: 2rem; /* Adds space between cards */
   position: relative;
   z-index: 1;
-  background-color: #242424;
+  background-color: #d8d8d8;
 }
 
 /* Social icons */
@@ -29,33 +29,42 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  z-index: 2; /* Keep socials above everything else */
+  z-index: 50; /* Keep socials above everything else */
 }
 
 #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: gray;
+  background-color: rgb(243, 243, 243);
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 10vh; /* Make height more dynamic */
-  box-shadow: 0px 5px 2px rgb(41, 40, 40);
+  height: 8.5vh; /* Make height more dynamic */
+  /* box-shadow: 0px 5px 2px rgb(41, 40, 40); */
   padding: 1rem;
   z-index: 10;
   flex-direction: row;
-  
+  border: 1px light black;
 }
 
 #canvas2 {
-  width: 60vh;
+  width: 10vw;
   height: 15vh;
   position: relative;
-  top: -1rem;
-  left: -10rem;
+  top: 2rem;
+  left: 0;
   z-index: 12;
+}
+
+#canvas3 {
+  width: 60vw;
+  height: 15vh;
+  position: fixed;
+  top: 85%;
+  margin-left: 60%;
+  z-index: 30;
 }
 
 #nav ul {
@@ -67,7 +76,7 @@
   color: rgb(167, 75, 1);
   flex-wrap: nowrap;
   flex-direction: row;
-  position: fixed;
+  position: absolute;
   right: 0;
 
 }
@@ -80,19 +89,26 @@ li, ul {
   list-style: none;
   text-decoration: none;
   
+  
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   padding: 2rem;
   text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Card styles */
 #cardList {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 600;
   color: rgb(51, 47, 47);
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .topCard {
@@ -103,15 +119,16 @@ h2 {
   margin-top: 35rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
-  border: 3px solid orange;
-  background-color: orange;
+  border: 3px solid rgb(167, 75, 1);
+  background-color: rgb(167, 75, 1);
+  border-radius: 30px;
   color: black;
-  object-fit: cover;
   position: absolute;
-  left: 2rem;
-  width: calc(95vw - 1rem); /* Makes the cards 50% of the available width */
-
-
+  left: .5rem;
+  width: calc(100% - 1rem); ; /* Makes the cards 50% of the available width */
+  text-align: center;
+  justify-content: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .topCard h2 {
@@ -136,11 +153,25 @@ h2 {
 }
 /* Individual card styles */
 #card1, #card2 {
-  width: calc(50% - 1rem); /* Makes the cards 50% of the available width */
+  width: calc(100% - 1rem); /* Makes the cards 50% of the available width */
   padding: 1em;
-  border: 3px solid orange;
-  background-color: orange;
+  border: 3px solid rgb(167, 75, 1);
+  background-color: rgb(167, 75, 1);
   color: black;
+  border-radius: 30px;
+}
+
+#card1 h2 {
+  font-size: 4rem;
+}
+
+#card2 h2 {
+  font-size: 4rem;
+}
+
+.icon {
+  width: 17vw;
+  height: 25vh;
 }
 
 img {
@@ -166,11 +197,12 @@ img {
 
 #image1 {
   width: 100%; /* Adjust width to be fully responsive */
-  height: 30vh;
+  height: 100vh;
 }
 
 #image2 {
-  height: 30vh;
+  height: 85vh;
+  width: 100%;
 }
 
 

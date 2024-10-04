@@ -14,7 +14,7 @@ function NavigationBar() {
     <>
         <nav id='nav'>
         <div id="canvas2">
-            <Logoscene />
+            <img src="Logo1.jpg" />
         </div>
             <ul style={{ listStyleType: 'none'}}>
                 <li>
