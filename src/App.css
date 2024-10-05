@@ -116,7 +116,7 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 35rem; /* Adds space between video and cards */
+  margin-top: 30rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
   border: 3px solid rgb(167, 75, 1);
@@ -156,12 +156,13 @@ h2 {
 
 /* Individual card styles */
 #card1, #card2 {
-  width: calc(100% - 1rem); /* Makes the cards 50% of the available width */
-  padding: 1em;
+  width: 100%; /* Makes the cards 50% of the available width */
+  padding: 1rem;
   border: 3px solid rgb(167, 75, 1);
   background-color: rgb(167, 75, 1);
   color: black;
   border-radius: 30px;
+  box-sizing: border-box;
 }
 
 #card1 li {
@@ -189,6 +190,7 @@ img {
   opacity: 90%;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 #copyright {
@@ -256,33 +258,6 @@ Link{
   #card2 li {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 480px) {
-  #nav ul {
-    font-size: .5rem; /* Further reduce font size for very small screens */
-    padding: 0.3rem;
-  }
-
-  #nav ul li a {
-    font-size: .5rem; /* Even smaller for very narrow screens */
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-  .cards {
-    font-size: 1rem;
-  }
-  #card1 li {
-    font-size: 1rem;
-  }
-  
-  #card2 li {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 768px) {
   h2 {
     font-size: 2rem;
   }
@@ -299,11 +274,28 @@ Link{
 
 @media (max-width: 480px) {
   #nav ul {
-    font-size: 0.8rem;
+    font-size: .5rem; /* Further reduce font size for very small screens */
+    padding: 0.3rem;
   }
   h2 {
     font-size: 1.8rem;
   }
+  .cards {
+    font-size: 1rem;
+  }
+  #card1 li {
+    font-size: 1rem;
+  }
+  #card2 li {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .cards {
+    width: 100%
+  }
 }
+
 
 
