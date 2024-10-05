@@ -119,8 +119,6 @@ h2 {
   margin-top: 40rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
-  border: 3px solid rgb(167, 75, 1);
-  background-color: rgb(167, 75, 1);
   border-radius: 30px;
   color: black;
   position: absolute;

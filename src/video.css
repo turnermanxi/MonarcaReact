@@ -6,7 +6,7 @@
     height: 100vh; /* Full height to cover the entire viewport */
     z-index: -1; /* Puts video behind everything */
     opacity: 75%;
-    background-color: rgb(216, 216, 216);
+    background-color: black;
   }
   
   #video > div {
