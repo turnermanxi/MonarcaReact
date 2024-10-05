@@ -261,6 +261,9 @@ Link{
   h2 {
     font-size: 2rem;
   }
+  .topCard {
+    left: .5rem;
+  }
   .topCard h2 {
     font-size: 2rem;
   }
@@ -300,6 +303,9 @@ Link{
   }
   #canvas3 {
     margin-left: 50%
+  }
+  .topCard {
+    left: .5rem;
   }
 }
 
