@@ -116,7 +116,7 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 30rem; /* Adds space between video and cards */
+  margin-top: 40rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
   border: 3px solid rgb(167, 75, 1);
@@ -270,6 +270,9 @@ Link{
   .cards {
     width: 100%
   }
+  #canvas3 {
+    margin-left: 50%
+  }
 }
 
 @media (max-width: 480px) {
@@ -294,6 +297,9 @@ Link{
   }
   .cards {
     width: 100%
+  }
+  #canvas3 {
+    margin-left: 50%
   }
 }
 
