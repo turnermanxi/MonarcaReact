@@ -116,7 +116,7 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 25rem; /* Adds space between video and cards */
+  margin-top: 27rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
   border-radius: 30px;
@@ -146,7 +146,7 @@ h2 {
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 50rem; /* Adds space between video and cards */
+  margin-top: 55rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding: 1rem; /* Extra padding to ensure it's clear of the video */
 }
