@@ -148,7 +148,7 @@ h2 {
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 60rem; /* Adds space between video and cards */
+  margin-top: 70rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding: 1rem; /* Extra padding to ensure it's clear of the video */
 }
