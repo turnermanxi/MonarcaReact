@@ -124,8 +124,9 @@ h2 {
   border-radius: 30px;
   color: black;
   position: absolute;
-  left: .5rem;
-  width: calc(100% - 1rem); ; /* Makes the cards 50% of the available width */
+  top: 0;
+  left: 0;
+  width: calc(100% - 1rem); ; /* Makes the cards 100% of the available width */
   text-align: center;
   justify-content: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -142,15 +143,17 @@ h2 {
 }
 
 .cards {
-  gap: 20px;
   display: flex;
-  flex-wrap: wrap; /* Ensure cards wrap if needed */
+  flex-wrap: wrap;
+  gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
   margin-top: 60rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
-  padding-top: 10rem; /* Extra padding to ensure it's clear of the video */
+  padding: 1rem; /* Extra padding to ensure it's clear of the video */
 }
+
+
 /* Individual card styles */
 #card1, #card2 {
   width: calc(100% - 1rem); /* Makes the cards 50% of the available width */
@@ -159,6 +162,14 @@ h2 {
   background-color: rgb(167, 75, 1);
   color: black;
   border-radius: 30px;
+}
+
+#card1 li {
+  font-size: 2rem;
+}
+
+#card2 li {
+  font-size: 2rem;
 }
 
 #card1 h2 {
@@ -170,8 +181,8 @@ h2 {
 }
 
 .icon {
-  width: 17vw;
-  height: 25vh;
+  width: 10vw;
+  height: 15vh;
 }
 
 img {
@@ -198,11 +209,13 @@ img {
 #image1 {
   width: 100%; /* Adjust width to be fully responsive */
   height: 100vh;
+  border-radius: 15px;
 }
 
 #image2 {
   height: 85vh;
   width: 100%;
+  border-radius: 15px;
 }
 
 
@@ -235,6 +248,14 @@ Link{
   h2 {
     font-size: 2rem; /* Smaller heading */
   }
+
+  #card1 li {
+    font-size: 1rem;
+  }
+  
+  #card2 li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -250,7 +271,39 @@ Link{
   h2 {
     font-size: 1.8rem;
   }
+  .cards {
+    font-size: 1rem;
+  }
+  #card1 li {
+    font-size: 1rem;
+  }
+  
+  #card2 li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .topCard h2 {
+    font-size: 2rem;
+  }
+  .topCard p {
+    font-size: 1rem;
+  }
+  .cards {
+    width: 100%
+  }
 }
 
+@media (max-width: 480px) {
+  #nav ul {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
 
 

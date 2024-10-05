@@ -25,7 +25,9 @@ function Card() {
 
     return (
         <>
-        <div className='topCard'>
+        
+            <div className="cards">
+            <div className='topCard'>
             <h2>What we do</h2>
             <p>Lorem lorem lorem lorem stuff more lorem
             Lorem lorem lorem lorem stuff more lorem 
@@ -39,7 +41,6 @@ function Card() {
             Lorem lorem lorem lorem stuff more lorem 
              </p>
         </div>
-            <div className="cards">
                 <div id='card1'>
                     <img src={myImage2} alt="Lawn Maintenance" id="image2"/>
                     <h2>Lawn Maintenance</h2>
