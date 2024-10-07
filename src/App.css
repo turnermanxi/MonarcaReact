@@ -17,8 +17,8 @@
   grid-template-rows: auto; /* Allows rows to grow naturally */
   grid-gap: 2rem; /* Adds space between cards */
   position: relative;
-  z-index: 1;
   background-color: #d8d8d8;
+  z-index: 1;
 }
 
 /* Social icons */
@@ -30,6 +30,10 @@
   flex-direction: column;
   gap: 25px;
   z-index: 50; /* Keep socials above everything else */
+}
+
+a {
+  text-decoration: none;
 }
 
 #nav {
@@ -85,6 +89,18 @@
   font-size: 1.3rem; /* 2% of the viewport width */
 }
 
+#nav ul li:hover {
+  color: rgb(0, 0, 0);
+  transition: color 0.25s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  transition: color 0.25s;
+
+}
+
 li, ul {
   list-style: none;
   text-decoration: none;
@@ -98,6 +114,7 @@ h2 {
   text-align: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
 
 /* Card styles */
 #cardList {
@@ -116,18 +133,18 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 27rem; /* Adds space between video and cards */
+  margin-top: 25.2rem; /* Adds space between video and cards */
   z-index: -1; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
-  border-radius: 30px;
-  color: black;
+  color: rgb(167, 75, 1);
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 1rem); ; /* Makes the cards 100% of the available width */
+  width: 100vw; ; /* Makes the cards 100% of the available width */
   text-align: center;
   justify-content: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: black;
 }
 
 .topCard h2 {
@@ -146,7 +163,7 @@ h2 {
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 55rem; /* Adds space between video and cards */
+  margin-top: 60rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding: 1rem; /* Extra padding to ensure it's clear of the video */
 }
@@ -154,7 +171,7 @@ h2 {
 
 /* Individual card styles */
 #card1, #card2 {
-  width: 100%; /* Makes the cards 50% of the available width */
+  width: 100%; 
   padding: 1rem;
   border: 3px solid rgb(167, 75, 1);
   background-color: rgb(167, 75, 1);
@@ -186,15 +203,15 @@ h2 {
 
 img {
   opacity: 90%;
-  max-width: 100%;
+  width: 7rem;
   height: auto;
   object-fit: cover;
 }
 
 #copyright {
   width: 100vw; /* Full width of the viewport */
-  background-color: grey;
-  color: orange;
+  background-color: rgb(0, 0, 0);
+  color: rgb(167, 75, 1);
   padding: 35px;
   text-align: center;
   font-weight: 800;
@@ -203,7 +220,7 @@ img {
   position: absolute; /* Stick it to the bottom of the page */
   left: 0;
   bottom: -8rem;
-  z-index: 1; /* Ensure it's above the video */
+  z-index: 1; 
 }
 
 #image1 {
@@ -228,7 +245,7 @@ img {
   background-color: orange;
 }
 
-Link{
+Link {
   text-decoration: none;
 }
 
@@ -259,9 +276,7 @@ Link{
   h2 {
     font-size: 2rem;
   }
-  .topCard {
-    left: .5rem;
-  }
+ 
   .topCard h2 {
     font-size: 2rem;
   }
@@ -301,9 +316,6 @@ Link{
   }
   #canvas3 {
     margin-left: 50%
-  }
-  .topCard {
-    left: .5rem;
   }
 }
 

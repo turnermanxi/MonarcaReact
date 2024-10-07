@@ -26,7 +26,7 @@ function NavigationBar() {
                     Services
                 </li>
                 <li>
-                    <Link to='gallery'>Gallery</Link>
+                    <Link to='gallery' style ={{ textDecoration: 'none', color: 'rgb(167, 75, 1)' }} >Gallery</Link>
                 </li>
                 <li>
                 📱 555-555-5555
