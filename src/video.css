@@ -21,7 +21,7 @@
   #video > .banner-video, 
   .react-player {
     width: 100vw !important;
-    height: 50% !important;
+    height: 80% !important;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -32,13 +32,13 @@
   .react-player__preview, 
   .react-player__wrapper {
     width: 100vw !important;
-    height: 50vh !important;
+    height: 80vh !important;
   }
   
   .react-player video {
     object-fit: cover !important;
     width: 100vw;
-    height: 50vh; /* Ensure video covers full viewport */
+    height: 80vh; /* Ensure video covers full viewport */
   }
   
   @media (max-width: 768px) {

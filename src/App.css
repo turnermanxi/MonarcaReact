@@ -133,14 +133,14 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 25rem; /* Adds space between video and cards */
+  margin-top: 37rem; /* Adds space between video and cards */
   z-index: -5; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
   color: rgb(167, 75, 1);
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; ; /* Makes the cards 100% of the available width */
+  width: 100vw;  /* Makes the cards 100% of the available width */
   text-align: center;
   justify-content: center;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -163,20 +163,18 @@ h2 {
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 60rem; /* Adds space between video and cards */
+  margin-top: 70rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
-  padding: 1rem; /* Extra padding to ensure it's clear of the video */
+  padding: 2rem;
+  
 }
 
 
 /* Individual card styles */
 #card1, #card2 {
-  width: 100%; 
-  padding: 1rem;
-  border: 3px solid rgb(167, 75, 1);
+  width: 100vw; 
   background-color: rgb(167, 75, 1);
   color: black;
-  border-radius: 30px;
   box-sizing: border-box;
 }
 
