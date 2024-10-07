@@ -133,8 +133,8 @@ h2 {
   display: flex;
   flex-wrap: wrap; /* Ensure cards wrap if needed */
   justify-content: space-between; /* Spread the cards */
-  margin-top: 25.2rem; /* Adds space between video and cards */
-  z-index: -1; /* Ensure cards are above the video */
+  margin-top: 25rem; /* Adds space between video and cards */
+  z-index: -5; /* Ensure cards are above the video */
   padding: 2rem; /* Extra padding to ensure it's clear of the video */
   color: rgb(167, 75, 1);
   position: absolute;
