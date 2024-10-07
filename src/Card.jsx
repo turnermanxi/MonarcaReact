@@ -29,15 +29,16 @@ function Card() {
             <div className="cards">
             <div className='topCard'>
             <div id="aboutSection">
-                <h2>What we do</h2>
-                <p>Top Lawn Care Services in Tampa – MonarcaOutdoors
-                 Are you looking for reliable, professional lawn care services in Tampa?
+                <h2>What we do:</h2>
+                <h3>Top Lawn Care Services in Tampa – MonarcaOutdoors</h3>
+                <p>
+                 Looking for reliable, professional lawn care services in Tampa?
                  At MonarcaOutdoors, we specialize in keeping your yard in perfect shape,
                  offering a range of services designed to meet your landscaping needs.
                 </p>
-                <h2>Why Choose MonarcaOutdoors?</h2>
+                <h2>Why choose MonarcaOutdoor?</h2>
                 <p>
-                MonarcaOutdoors is a trusted lawn care service in Tampa,
+                We are a trusted lawn care service in Tampa,
                 providing quality maintenance and care for residential and commercial properties.
                 Our experienced team understands Tampa’s climate,
                 ensuring that your lawn stays healthy and beautiful all year round.

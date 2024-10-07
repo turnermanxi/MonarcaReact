@@ -110,8 +110,8 @@ li, ul {
 
 h2 {
   font-size: 4.5rem;
-  padding: 2rem;
-  text-align: center;
+  padding: 5rem;
+  text-align: left;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -148,7 +148,7 @@ h2 {
 }
 
 .topCard h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 
@@ -163,7 +163,7 @@ h2 {
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
-  margin-top: 70rem; /* Adds space between video and cards */
+  margin-top: 85rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding: 2rem;
   
