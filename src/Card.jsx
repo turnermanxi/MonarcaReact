@@ -30,6 +30,30 @@ function Card() {
             <div className='topCard'>
             <div id="aboutSection">
                 <h2>What we do:</h2>
+                <ul style={{ listStyleType: 'none' }}>
+                        <div id="cardList">
+                            <li><img src={myIcon} alt="Monarca bush icon" 
+                            className='icon' />Bush Trimming</li>
+                            <li><img src={myIcon2} alt="Monarca mower icon" 
+                            className='icon' />One Time Mows</li>
+                            <li><img src={myIcon3} alt="Monarca grass icon" 
+                            className='icon' />Overgrown Properties</li>
+                            <li><img src={myIcon4} alt="Monarca grass icon" 
+                            className='icon' />Real Estate Showings</li>
+                        </div>
+                    </ul>
+                    <ul style={{ listStyleType: 'none' }}>
+                        <div id="cardList">
+                            <li><img src={myIcon5} alt="Monarca flowerbed icon" 
+                            className='icon' />Flower Beds</li>
+                            <li><img src={myIcon6} alt="Monarca resod icon" 
+                            className='icon' />Resodding</li>
+                            <li><img src={myIcon7} alt="Monarca mulch icon" 
+                            className='icon' />Mulch</li>
+                            <li><img src={myIcon8} alt="Monarca landscape icon" 
+                            className='icon' />Landscape Lighting</li>
+                        </div>
+                    </ul>
                 <h3>Top Lawn Care Services in Tampa – MonarcaOutdoors</h3>
                 <p>
                  Looking for reliable, professional lawn care services in Tampa?
@@ -48,18 +72,7 @@ function Card() {
                 <div id='card1'>
                     <img src={myImage2} alt="Lawn Maintenance" id="image2"/>
                     <h2>Lawn Maintenance</h2>
-                    <ul style={{ listStyleType: 'none' }}>
-                        <div id="cardList">
-                            <li><img src={myIcon} alt="Monarca bush icon" 
-                            className='icon' />Bush Trimming</li>
-                            <li><img src={myIcon2} alt="Monarca mower icon" 
-                            className='icon' />One Time Mows</li>
-                            <li><img src={myIcon3} alt="Monarca grass icon" 
-                            className='icon' />Overgrown Properties</li>
-                            <li><img src={myIcon4} alt="Monarca grass icon" 
-                            className='icon' />Real Estate Showings</li>
-                        </div>
-                    </ul>
+                    
                     <div className="container mt-5">
                         <button onClick={toggleLawnMaintenanceModal}>
                             Get Quote
@@ -71,18 +84,7 @@ function Card() {
                 <div id='card2'>
                     <img src={myImage} alt="Monarca Lawn Care" id="image1" />
                     <h2>Lawn Care</h2>
-                    <ul style={{ listStyleType: 'none' }}>
-                        <div id="cardList">
-                            <li><img src={myIcon5} alt="Monarca flowerbed icon" 
-                            className='icon' />Flower Beds</li>
-                            <li><img src={myIcon6} alt="Monarca resod icon" 
-                            className='icon' />Resodding</li>
-                            <li><img src={myIcon7} alt="Monarca mulch icon" 
-                            className='icon' />Mulch</li>
-                            <li><img src={myIcon8} alt="Monarca landscape icon" 
-                            className='icon' />Landscape Lighting</li>
-                        </div>
-                    </ul>
+                    
                     <div className="container mt-5">
                         <button onClick={toggleLawnCareModal}>
                             Get Quote
