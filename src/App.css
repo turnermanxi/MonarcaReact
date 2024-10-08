@@ -128,13 +128,14 @@ h2 {
   gap: 4rem;
   text-align: center;
   justify-content: center;
+  
 }
 
-#cardList img {
+#cardList li img {
   background-color: rgb(167, 75, 1);
-  border-radius: 40px;
-  opacity: 80%;
+  border-radius: 20px;
 }
+
 
 .topCard {
   gap: 5px;
@@ -181,23 +182,23 @@ h2 {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 4rem;
   justify-content: space-between; /* Spread the cards */
   align-items: flex-start;
   margin-top: 130rem; /* Adds space between video and cards */
   z-index: 2; /* Ensure cards are above the video */
   padding: 2rem;
+  border: 1px solid transparent;
   
 }
 
 
 /* Individual card styles */
 #card1, #card2 {
-  width: 100vw; 
-  background-color: rgb(167, 75, 1);
+  width: calc( 50% - 1rem ); 
   color: black;
-  box-sizing: border-box;
+  
 }
 
 #card1 li {
@@ -209,16 +210,21 @@ h2 {
 }
 
 #card1 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   position: relative;
-  top: -40rem;
+  top: -45rem;
   left: 0;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #card2 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  position: relative;
+  top: -45rem;
+  left: 0;
+  color: rgb(0, 0, 0);
 }
+
 
 .icon {
   width: 10vw;
@@ -230,6 +236,7 @@ img {
   width: 7rem;
   height: auto;
   object-fit: cover;
+  
 }
 
 #copyright {
@@ -251,12 +258,26 @@ img {
   width: 100%; /* Adjust width to be fully responsive */
   height: 100vh;
   border-radius: 15px;
+  opacity: 78%;
 }
 
 #image2 {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   border-radius: 15px;
+  opacity: 78%;
+}
+
+#button1 {
+  position: relative;
+  bottom: 28rem;
+  left: 15rem;
+}
+
+#button2 {
+  position: relative;
+  bottom: 24rem;
+  left: 15rem;
 }
 
 
@@ -308,11 +329,18 @@ Link {
     font-size: 1rem;
   }
   .cards {
-    width: 100%
+    width: 100vw
   }
   #canvas3 {
     margin-left: 50%
   }
+  #card1, #card2 {
+    
+    width: calc( 100% - 1rem ); 
+   
+  }
+
+ 
 }
 
 @media (max-width: 480px) {
@@ -336,7 +364,7 @@ Link {
     font-size: 1.8rem;
   }
   .cards {
-    width: 100%
+    width: 100vw
   }
   #canvas3 {
     margin-left: 50%

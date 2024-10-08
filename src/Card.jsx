@@ -73,8 +73,8 @@ function Card() {
                     <img src={myImage2} alt="Lawn Maintenance" id="image2"/>
                     <h2>Lawn Maintenance</h2>
                     
-                    <div className="container mt-5">
-                        <button onClick={toggleLawnMaintenanceModal}>
+                    <div className="container-mt-5">
+                        <button id='button1' onClick={toggleLawnMaintenanceModal}>
                             Get Quote
                         </button>
                         <ModalS isOpen={isLawnMaintenanceModalOpen} onClose={toggleLawnMaintenanceModal} />
@@ -85,8 +85,8 @@ function Card() {
                     <img src={myImage} alt="Monarca Lawn Care" id="image1" />
                     <h2>Lawn Care</h2>
                     
-                    <div className="container mt-5">
-                        <button onClick={toggleLawnCareModal}>
+                    <div className="container-mt-5">
+                        <button id ='button2' onClick={toggleLawnCareModal}>
                             Get Quote
                         </button>
                         <ModalS isOpen={isLawnCareModalOpen} onClose={toggleLawnCareModal} />
